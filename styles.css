@@ -5,6 +5,39 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+header {
+    display: flex;
+    background-color: #fbab7e;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header button {
+    background: none;
+    border: none;
+    padding: 0.2rem 0.2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    color: white;
+    border: rgba(0, 0, 0, 0) solid;
+    border-width: 0.125rem;
+}
+
+header button:hover {
+    border-bottom: white solid;
+    border-width: 0.125rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 1rem;
+}
+
+.logo {
+    margin: 0 1rem;
+}
+
 .main-content {
     min-height: 2217px;
     min-width: 1440px;
@@ -18,5 +51,5 @@ footer {
 
 .icon {
     color: #3f3d56;
-    padding: 0 0.6rem 0 0.6rem;
+    margin: 0 0.6rem 0 0.6rem;
 }

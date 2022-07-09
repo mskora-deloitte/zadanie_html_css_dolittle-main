@@ -4,3 +4,19 @@
 :root {
     font-family: 'Open Sans', sans-serif;
 }
+
+.main-content {
+    min-height: 2217px;
+    min-width: 1440px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    color: #3f3d56;
+    padding: 0 0.6rem 0 0.6rem;
+}

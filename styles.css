@@ -3,11 +3,17 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
+    height: 2217px;
+    width: 1440px;
 }
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    width: 1440px;
     display: flex;
-    background-color: #fbab7e;
     align-items: center;
     justify-content: space-between;
 }
@@ -16,7 +22,8 @@ header button {
     background: none;
     border: none;
     padding: 0.2rem 0.2rem;
-    margin: 0 1rem;
+    margin: 0 2rem;
+    font-size: large;
     cursor: pointer;
     color: white;
     border: rgba(0, 0, 0, 0) solid;
@@ -32,24 +39,40 @@ header button:hover {
     display: flex;
     justify-content: space-around;
     margin: 1rem 1rem;
+    padding: 0 2rem;
 }
 
 .logo {
-    margin: 0 1rem;
+    margin: 0;
+}
+
+.background-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    background-image: linear-gradient(#fbab7e, white);
+    height: 554px;
+    width: 1440px;
 }
 
 .main-content {
-    min-height: 2217px;
-    min-width: 1440px;
+    height: 1000px;
 }
 
 footer {
+    width: 1440px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+footer > * {
+    margin: 0 5rem;
+    font-size: large;
 }
 
 .icon {
     color: #3f3d56;
-    margin: 0 0.6rem 0 0.6rem;
+    margin: 0 0.75rem 0 0.75rem;
 }

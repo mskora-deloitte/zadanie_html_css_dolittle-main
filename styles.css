@@ -3,8 +3,8 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
-    height: 2217px;
-    width: 1440px;
+    /* height: 2217px;
+    width: 1440px; */
 }
 
 header {
@@ -12,7 +12,8 @@ header {
     top: 0;
     left: 0;
     margin: 2rem;
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,17 +52,49 @@ header button:hover {
     top: 0;
     left: 0;
     z-index: -10;
-    background-image: linear-gradient(#fbab7e, white);
-    height: 554px;
-    width: 1440px;
+    background-image: linear-gradient(#fbab7e, #fbe1bf, white);
+    /* height: 554px; */
+    height: 30%;
+    width: 100%;
+    /* width: 1440px; */
 }
 
 .main-content {
     height: 1000px;
 }
 
+.trending-recipes {
+    /* height: 554px; */
+    color: white;
+    font-size: larger;
+    background-color: #fbab7e;
+}
+
+.trending-recipes > * {
+    padding: 2rem 4rem;
+}
+
+.image-box {
+    display: flex;
+    justify-content: space-between;
+    /* overflow: hidden; */
+}
+
+.image-box > div {
+    height: 330px;
+    width: 250px;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.image img {
+    height: 390px;
+    width: 260px;
+}
+
 footer {
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -118,11 +118,17 @@ header button:hover {
     margin-top: 0;
 }
 
-.image-box > div {
+.image {
     height: 22rem;
     width: 17.33rem;
     border-radius: 1.5rem;
     overflow: hidden;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.image:hover {
+    animation-name: darken;
 }
 
 .image img {
@@ -192,4 +198,9 @@ footer > * {
     text-decoration: none;
     color: unset;
     box-sizing: content-box;
+}
+
+@keyframes darken {
+    from { filter: brightness(100%); }
+    to { filter: brightness(50%); }
 }

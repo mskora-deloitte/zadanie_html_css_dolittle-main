@@ -47,11 +47,12 @@ header button:hover {
     display: flex;
     justify-content: space-around;
     margin: 1rem 1rem;
-    padding: 0 2rem;
+    padding: 2rem;
 }
 
 .logo {
     margin: 0;
+    padding: 2rem;
     height: 4rem;
     width: 7.15rem;
 }

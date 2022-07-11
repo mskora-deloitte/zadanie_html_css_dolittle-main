@@ -5,25 +5,34 @@
     font-family: 'Open Sans', sans-serif;
     /* height: 2217px;
     width: 1440px; */
+    --site-width: 72rem;
+    --site-height: 110.85rem;
+}
+
+body {
+    height: var(--site-height);
+    width: var(--site-width);
 }
 
 header {
     position: relative;
     top: 0;
     left: 0;
-    margin: 2rem;
+    margin: 0;
+    padding: 0;
     /* width: 1440px; */
-    width: 100%;
+    height: 10.85rem;
+    width: var(--site-width);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 header button {
     background: none;
     border: none;
-    padding: 0.2rem 0.2rem;
-    margin: 0 2rem;
+    /* padding: 0.2rem 0.2rem; */
+    /* margin: 0 2rem; */
     font-size: large;
     cursor: pointer;
     color: white;
@@ -45,28 +54,35 @@ header button:hover {
 
 .logo {
     margin: 0;
+    height: 4rem;
+    width: 7.15rem;
+}
+
+#cooking-img {
+    height: 100%;
+    width: 100%;
 }
 
 .background-gradient {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -10;
+    z-index: -1;
     background-image: linear-gradient(#fbab7e, #fbe1bf, white);
     /* height: 554px; */
-    height: 30%;
-    width: 100%;
+    height: 35rem;
+    width: var(--site-width);
     /* width: 1440px; */
 }
 
 .main-content {
     display: grid;
     color: #3f3d56;
-    row-gap: 5rem;
-    column-gap: 15rem;
+    row-gap: 2.5rem;
+    column-gap: 7.5rem;
     column-count: 2;
-    height: 1000px;
-    width: 100%;
+    height: 85rem;
+    width: var(--site-width);
     grid-template-columns: 30% 30%;
     grid-template-rows: 20% 20% 20%;
     justify-content: space-around;
@@ -77,36 +93,40 @@ header button:hover {
     color: white;
     font-size: larger;
     background-color: #fbab7e;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
 }
 
 .trending-recipes > * {
-    padding: 2rem 4rem;
+    margin: 2rem 4rem;
 }
 
 .image-box {
     display: flex;
     justify-content: space-between;
-    /* overflow: hidden; */
+    margin-top: 0;
 }
 
 .image-box > div {
-    height: 330px;
-    width: 250px;
-    border-radius: 2rem;
+    height: 22rem;
+    width: 17.33rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 
 .image img {
-    height: 390px;
-    width: 260px;
+    height: 26rem;
+    width: 17.33rem;
 }
 
 footer {
     /* width: 1440px; */
-    width: 100%;
+    width: var(--site-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
 }
 
 footer > * {

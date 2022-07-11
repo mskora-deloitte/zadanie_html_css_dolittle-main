@@ -186,3 +186,10 @@ footer > * {
 .box-shadow2 {
     box-shadow: 0rem 0.2rem 0.2rem 0rem #c28461;
 }
+
+.custom-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: unset;
+    box-sizing: content-box;
+}

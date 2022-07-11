@@ -70,7 +70,6 @@ header button:hover {
     border-radius: 1rem;
     border-color: lightgray;
     border-width: 0.1rem;
-    box-shadow: 0rem 0.2rem 0.2rem 0rem #c7c7c7;
 }
 
 .main-img {
@@ -156,4 +155,33 @@ footer > * {
 .main-heading {
     margin: 1rem 0 0.5rem 0;
     padding: 0;
+}
+
+#email-input {
+    border-style: solid;
+    border-color: #c7c7c7;
+    border-radius: 0.5rem;
+    margin: 1rem 0.5rem 1rem 0;
+    padding: 0.5rem 1rem;
+}
+
+#email-input::placeholder {
+    color: #dfdfdf;
+}
+
+#subscribtion-button {
+    background-color: #fbab7e;
+    color: white;
+    border-radius: 0.5rem;
+    border-style: none;
+    margin: 1rem 0 1rem 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.box-shadow {
+    box-shadow: 0rem 0.2rem 0.2rem 0rem #c7c7c7;
+}
+
+.box-shadow2 {
+    box-shadow: 0rem 0.2rem 0.2rem 0rem #c28461;
 }

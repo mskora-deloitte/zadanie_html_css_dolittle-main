@@ -5,6 +5,8 @@
     font-family: 'Open Sans', sans-serif;
     /* height: 2217px;
     width: 1440px; */
+    display: flex;
+    justify-content: center;
     --site-width: 72rem;
     --site-height: 110.85rem;
 }
@@ -16,11 +18,8 @@ body {
 
 header {
     position: relative;
-    top: 0;
-    left: 0;
     margin: 0;
     padding: 0;
-    /* width: 1440px; */
     height: 10.85rem;
     width: var(--site-width);
     display: flex;
@@ -30,9 +29,8 @@ header {
 
 header button {
     background: none;
-    border: none;
-    /* padding: 0.2rem 0.2rem; */
-    /* margin: 0 2rem; */
+    padding: 0.2rem 0.2rem;
+    margin: 0 2rem;
     font-size: large;
     cursor: pointer;
     color: white;
@@ -63,33 +61,45 @@ header button:hover {
     width: 100%;
 }
 
+.main-img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-style: solid;
+    border-radius: 1rem;
+    border-color: lightgray;
+    border-width: 0.1rem;
+    box-shadow: 0rem 0.2rem 0.2rem 0rem #c7c7c7;
+}
+
+.main-img {
+    height: 70%;
+}
+
 .background-gradient {
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: -1;
     background-image: linear-gradient(#fbab7e, #fbe1bf, white);
-    /* height: 554px; */
     height: 35rem;
     width: var(--site-width);
-    /* width: 1440px; */
 }
 
 .main-content {
     display: grid;
     color: #3f3d56;
-    row-gap: 2.5rem;
+    row-gap: 3rem;
     column-gap: 7.5rem;
     column-count: 2;
-    height: 85rem;
+    height: 72rem;
     width: var(--site-width);
     grid-template-columns: 30% 30%;
     grid-template-rows: 20% 20% 20%;
     justify-content: space-around;
+    align-content: center;
 }
 
 .trending-recipes {
-    /* height: 554px; */
     color: white;
     font-size: larger;
     background-color: #fbab7e;
@@ -121,7 +131,6 @@ header button:hover {
 }
 
 footer {
-    /* width: 1440px; */
     width: var(--site-width);
     display: flex;
     justify-content: space-between;
@@ -137,4 +146,14 @@ footer > * {
 .icon {
     color: #3f3d56;
     margin: 0 0.75rem 0 0.75rem;
+}
+
+.heading {
+    margin: 0.1rem;
+    padding: 0.1rem;
+}
+
+.main-heading {
+    margin: 1rem 0 0.5rem 0;
+    padding: 0;
 }
